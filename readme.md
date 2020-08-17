@@ -1,3 +1,13 @@
+# py2aliyungdb
+
+Aliyun cannot use py2neo for import. Use py2aliyungdb instead of creating new nodes and relationships.
+
+## Install
+`pip install py2aliyungdb`
+
+## Example
+
+```
 '''
 Author: JavanTang
 Data: Do not edit
@@ -45,3 +55,5 @@ print(list(matcher.match("d").where("_.name='c2'").limit(10)))
 print(list(matcher.match("d").where("_.name=~'c.*'").limit(10)))
 # for i in matcher:
 #     print(i)
+
+```
